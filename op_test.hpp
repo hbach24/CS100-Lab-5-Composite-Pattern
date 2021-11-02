@@ -1,40 +1,13 @@
-#ifndef __OP_TEST_HPP__
-#define __OP_TEST_HPP__
+#ifndef __OP_HPP__
+#define __OP_HPP__
 
-#include "gtest/gtest.h"
+#include "base.hpp"
 
-#include "op.hpp"
-using namespace std; 
+class Op : public Base {
+    public:
+        Op(double value) : Base() { }
+        virtual double evaluate() { return 0.0; }
+        virtual std::string stringify() { return ""; }
+};
 
-TEST(OpTest, OpEvaluateNonZero) {
-    Op* test = new Op(8);
-    EXPECT_EQ(test->evaluate(), 8);
-}
-
-TEST(OpTest, OpStringNonZero) {
-    Op* test = new Op(9);
-    string s = "9.000000";
-    EXPECT_EQ(test->stringify(), s);
-}
-
-TEST(OpTest, OpEvaluateNegative) {
-    Op* test = new Op(-10);
-    EXPECT_EQ(test->evaluate(), -10);
-}
-
-TEST(OpTest, OpStringNegative) {
-    Op* test = new Op(-3);
-    EXPECT_EQ(test->stringify(), "-3.000000");
-}
-
-TEST(OpTest, OpEvaluateZero) {
-    Op* test = new Op(0);
-    EXPECT_EQ(test->evaluate(), 0);
-}
-
-TEST(OpTest, OpStringZero) { 
-    Op* test = new Op(0);
-    EXPECT_EQ(test->stringify(), "0.000000");
-}
-
-#endif //__OP_TEST_HPP__
+#endif //__OP_HPP__
