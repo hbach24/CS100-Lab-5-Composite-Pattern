@@ -27,24 +27,7 @@ class Div : public Base {
 	}
 
         virtual std::string stringify() { 
-		string str = "(";
-		if(left->evaluate() < 0) {
-			str += "(";
-			str += left->stringify() + ")";
-		}
-		else {
-			str += left->stringify();
-		}
-
-		str += " / ";
-		if(right->evaluate() < 0) {
-			str += "(";
-			str += right->stringify() + ")";
-		}
-		else {
-			str += right->stringify();
-		}
-	return str + ")";	
+	return "(" + left->stringify() + " / " + right->stringify() + ")";
 	}
 	};
 

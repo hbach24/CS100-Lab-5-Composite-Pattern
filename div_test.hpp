@@ -59,7 +59,7 @@ TEST(DivTest, DivPosNeg) {
      Base* x = new Op(4);
      Base* y = new Op(-2);
      Div* test = new Div(x, y);
-     EXPECT_EQ(test->stringify(), "(4.000000 / (-2.000000))");
+     EXPECT_EQ(test->stringify(), "(4.000000 / -2.000000)");
 }
 
 #endif //__DIV_TEST_HPP__
