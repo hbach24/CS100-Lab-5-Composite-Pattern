@@ -15,7 +15,7 @@ class PosOp: public Base {
 	public:
 		PosOp(){}
 		virtual double evaluate() {return 4.2;}
-		virtual string stringify() {return "-4.2";}
+		virtual string stringify() {return "4.2";}
 }
 
 class ZeroOp: public Base {
