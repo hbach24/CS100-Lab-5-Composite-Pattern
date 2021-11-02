@@ -2,6 +2,7 @@
 #define __TESTING_MOCK_HPP__
 
 #include "base.hpp"
+using namespace std;
 class NegOp: public Base {
     public:
         NegOp() { }
