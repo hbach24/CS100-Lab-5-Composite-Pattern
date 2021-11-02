@@ -45,14 +45,14 @@ TEST(MultTest, MultString4and5) {
      Base* x = new Op(4);
      Base* y = new Op(5);
      Mult* test = new Mult(x, y);
-     EXPECT_EQ(test->stringify(), "4.000000 * 5.000000");   
+     EXPECT_EQ(test->stringify(), "(4.000000 * 5.000000)");   
 }
 
 TEST(MultTest, MultPosNeg) {
      Base* x = new Op(3);
      Base* y = new Op(-2);
      Mult* test = new Mult(x, y);
-     EXPECT_EQ(test->stringify(), "3.000000 * -2.000000");
+     EXPECT_EQ(test->stringify(), "(3.000000 * -2.000000)");
 }
 
 #endif //__MULT_TEST_HPP__
