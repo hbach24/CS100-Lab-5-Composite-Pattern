@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-#ifndef __OP_HPP__
-#define __OP_HPP__
-
-#include "base.hpp"
-=======
 #ifndef __OP_TEST_HPP__
 #define __OP_TEST_HPP__
 
@@ -11,18 +5,12 @@
 
 #include "op.hpp"
 using namespace std; 
->>>>>>> 09b8a07b637d07c81d224e2d0502faab51752727
 
-class Op : public Base {
-    public:
-        Op(double value) : Base() { }
-        virtual double evaluate() { return 0.0; }
-        virtual std::string stringify() { return ""; }
-};
+TEST(OpTest, OpEvaluateNonZero) {
+    Op* test = new Op(8);
+    EXPECT_EQ(test->evaluate(), 8);
+}
 
-<<<<<<< HEAD
-#endif //__OP_HPP__
-=======
 TEST(OpTest, OpStringNonZero) {
     Op* test = new Op(9);
     string s = "9.000000";
@@ -50,4 +38,4 @@ TEST(OpTest, OpStringZero) {
 }
 
 #endif //__OP_TEST_HPP__
->>>>>>> 09b8a07b637d07c81d224e2d0502faab51752727
+
