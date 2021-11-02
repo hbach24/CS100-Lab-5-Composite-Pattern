@@ -8,14 +8,14 @@ class NegOp: public Base {
         NegOp() { }
 
         virtual double evaluate() { return -3.5; }
-        virtual string stringify() { return "-3.5"; }
+        virtual string stringify() { return "(-3.5)"; }
 }
 
 class PosOp: public Base {
 	public:
 		PosOp(){}
 		virtual double evaluate() {return 4.2;}
-		virtual string stringify() {return "-4.2";}
+		virtual string stringify() {return "4.2";}
 }
 
 class ZeroOp: public Base {
