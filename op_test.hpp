@@ -38,3 +38,4 @@ TEST(OpTest, OpStringZero) {
 }
 
 #endif //__OP_TEST_HPP__
+

@@ -25,7 +25,7 @@ class Mult : public Base {
 	}
 
         virtual std::string stringify() { 
-		return left->stringify() + " * " + right->stringify();	
+		return "(" + left->stringify() + " * " + right->stringify() + ")";	
 	}
 	};
 
