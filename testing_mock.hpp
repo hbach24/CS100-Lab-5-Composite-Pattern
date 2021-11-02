@@ -8,7 +8,7 @@ class NegOp: public Base {
         NegOp() { }
 
         virtual double evaluate() { return -3.5; }
-        virtual string stringify() { return "-3.5"; }
+        virtual string stringify() { return "(-3.5)"; }
 }
 
 class PosOp: public Base {
