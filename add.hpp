@@ -18,7 +18,7 @@ class Add: public Base{
 	private:
 		Base* num1;
 		Base* num2;
-}
+};
 
 
 #endif
