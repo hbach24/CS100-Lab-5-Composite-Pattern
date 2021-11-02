@@ -25,5 +25,22 @@ class ZeroOp: public Base {
 		virtual string stringify() {return "0.0";}
 };
 
+class Pos2Op: public Base {
+        public:
+                Pos2Op(){}
+                virtual double evaluate() {return 2;}
+                virtual string stringify() {return "2";}
+};
+
+class Neg3Op: public Base {
+    public:
+        Neg3Op() { }
+
+        virtual double evaluate() { return -3; }
+        virtual string stringify() { return "-3"; }
+};
+
+
+
 
 #endif
